@@ -1,0 +1,22 @@
+seat = input("Enter your seat Type:")
+days = int(input("Enter your Booking Days:"))
+festival = input("Enter Festival or not: ").lower()=="true"
+age = int(input("Enter your Age: "))
+
+price = 5000
+if seat == "Business":
+    price *= 1.4
+elif seat == "Premiun Economy":
+    price *= 1.2
+
+if days > 30:
+    price *= 0.9
+if days < 7:
+    price *= 1.25
+
+if festival:
+    price *= 1.2
+if age > 60:
+    price *= 0.85
+
+print(price)
