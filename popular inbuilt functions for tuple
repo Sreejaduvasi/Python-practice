@@ -1,0 +1,10 @@
+salary = (6,70,100,600,700,90,10,80,120)
+
+print(tuple(reversed(salary)))
+print(len(salary))
+print(min(salary))
+print(max(salary))
+print(sum(salary))
+
+sorted_list = tuple(sorted(salary, reverse = True))
+print(sorted_list)
