@@ -1,0 +1,25 @@
+age = int(input())
+health_score = int(input())
+vehicle_type = input()
+
+premium = 10000
+
+# Age factor
+if age < 25:
+    premium += premium * 0.20
+elif age > 50:
+    premium += premium * 0.15
+
+# Health score
+if health_score >= 80:
+    premium -= premium * 0.10
+elif health_score < 60:
+    premium += premium * 0.20
+
+# Vehicle type
+if vehicle_type == "Sports":
+    premium += premium * 0.30
+elif vehicle_type == "SUV":
+    premium += premium * 0.15
+
+print(premium)
