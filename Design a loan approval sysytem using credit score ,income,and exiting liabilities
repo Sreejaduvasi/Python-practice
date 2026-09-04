@@ -1,0 +1,10 @@
+credit = int(input("Enter the score:")) 
+income = int(input("Enter monthly income:"))
+liabilities = int(input("Enter liabilities : "))
+
+if credit >= 750 and income >=50000 and liablities <= 20000:
+    print("Approved")
+elif 650 < credit < 750 and income >= 50000 and liabilitieds <= 20000:
+    print("Approved with conditions")
+else:
+    print("Reject")
